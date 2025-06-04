@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cherry%20Bomb%20One:wght@400&display=swap" rel="stylesheet">
+   <style>
+
+      body{
+         display: flex;
+         flex-direction: column
+      }
+      h1{
+         font-family: 'Cherry Bomb One';
+         font-size: 112px;
+         letter-spacing: 12px;
+         text-transform: uppercase;
+         text-align: center;
+         color: rgb(255, 118, 141);
+         margin: 0;
+      }
+ 
+
+      .image{
+         height: 60vh; 
+         margin-top: 33px;
+         align-self: center; 
+      }
+       
+   </style>
+</head>
+<body>
+   <h1>Mystic</h1> 
+   <img src="mystic.png" class="image" data-tilt>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+   <script>
+      VanillaTilt.init(document.querySelector(".image"), {
+            max: 25,
+            speed: 400
+         });
+   </script>
+</body>
+</html>
